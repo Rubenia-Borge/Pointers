@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+#include <iostream>
+using namespace std;
+
 int main(){
     
     int count; // count is an integer
@@ -16,6 +19,8 @@ int main(){
          << "The value of countPtr is " << *countPtr << endl << endl;
          
     cout << " Proving that * and & are compliments of "
-         << "each other." 
-    
+         << "each other." << endl << "&*countPtr = " << &*countPtr
+         << endl << "*&countPtr = " << *&countPtr << endl;
+         
+    return 0;
 }
